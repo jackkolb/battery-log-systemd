@@ -4,7 +4,7 @@ A simple systemd service to regularly record the current battery percent and cap
 
 This is designed for ArchLinux, which uses systemd timers in place of cron. The steps should be applicable to other linux distributions as well, but see your distribution's documentation first.
 
-###Setup
+### Setup
 
 Move `battery.service` and `battery.timer` to the systemd folder
 
