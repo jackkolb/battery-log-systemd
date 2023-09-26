@@ -6,12 +6,14 @@ This is designed for ArchLinux, which uses systemd timers in place of cron. The 
 
 ### Setup
 
-Move `battery.service` and `battery.timer` to the systemd folder
+1. Move `battery.service` and `battery.timer` to the systemd folder:
 
 `sudo mv battery.service /etc/systemd/system/`
+
 `sudo mv battery.timer /etc/systemd/system/`
 
-Reload the systemd files with
+2. Reload the systemd files with:
+
 `systemctl daemon-reload`
 
 Enjoy!
