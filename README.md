@@ -1,4 +1,4 @@
-# Battery Log
+# Systemd Battery Log
 
 A simple systemd service to regularly record the current battery percent and capacity. This can be useful to monitor battery health and usage over time. I use this to visualize my battery's capacity degradation over years of user.
 
