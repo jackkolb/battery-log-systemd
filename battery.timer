@@ -2,8 +2,7 @@
 Description=Timer to run battery.service every minute, which records battery charge, capacity, and power draw.
 
 [Timer]
-OnBootSec=1 m
-OnUnitActiveSec=1 m
+OnCalendar=*-*-* *:*:00
 Unit=battery.service
 
 [Install]
