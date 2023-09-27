@@ -1,5 +1,5 @@
 [Unit]
-Description=Collects battery percent, capacity, and power draw
+Description=Collects battery percent and capacity
 
 [Service]
 ExecStart=/bin/bash -c 'echo $EPOCHSECONDS $(acpi -i | tr " ", $"\n" | grep % | tr $"\n" " ") $(awk \'{print $1*10^-6}\' /sys/class/power_supply/BAT0/power_now)W >> %h/.batterylog'
