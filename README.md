@@ -16,4 +16,8 @@ This is designed for ArchLinux, which uses systemd timers in place of cron. The 
 
 `systemctl daemon-reload`
 
+3. Enable the service
+
+`systemctl enable battery.timer`
+
 Enjoy!
